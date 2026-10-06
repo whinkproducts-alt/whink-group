@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: whink-group
+    runtime: static
+    buildCommand: "test -f index.html"
+    staticPublishPath: .
