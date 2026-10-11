@@ -4,3 +4,7 @@ services:
     runtime: static
     buildCommand: "test -f index.html"
     staticPublishPath: .
+    headers:
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=86400
